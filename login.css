@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('D:/VE/Montserrat/Montserrat-VariableFont_wght.ttf');
+    /* Add other font-weight and style variations if needed */
+}
+body{
+    background-image: url(Loginbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    height: 100vh;
+    font-family:'Montserrat', sans-serif;
+    background-attachment: fixed;
+}
+
+.container{
+    padding: 30px;
+    background-color: #091b25ec;
+    color: aliceblue;
+    text-align: center;
+    width: 55%;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+
+}
+
+.container *{
+    margin: 5px;
+}
+
+.container h1{
+    font-size: 3rem;
+    font-weight:normal;
+    color: #FFF;
+
+}
+.container p{
+    font-size: x-large;
+}
+
+.btnContainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn{
+    background: rgb(59,66,70);
+    background: linear-gradient(0deg, rgba(59,66,70,1) 22%, rgba(75,84,89,1) 60%, rgba(117,131,139,1) 100%);
+    border: none;
+    padding: 20px;
+    color: #FFF;
+    font-size:medium;
+    border-radius: 30px; 
+    flex-basis: 32%;    
+    font-family:'Montserrat', sans-serif;
+}
+
+@media (max-width: 600px) {
+    .btn {
+        flex-basis: 100%; /* Make buttons take full width on small screens */
+    }
+}
+.btn:disabled
+{
+    background: #2D4955;
+    opacity: 0.5;
+}
+
+.txt{
+    position: relative;
+    display: block;
+}
+
+.txt input{
+    padding: 15px;
+    width: 60%;
+    border-radius: 25px;
+    background-color: #2D4955;
+    border: solid white thin;
+    color: #FFF;
+    
+    font-family:'Montserrat', sans-serif;
+}
+.txt button{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 15px;
+    right: 20%;
+    padding: 5px;
+    background: #7B1E1D;
+    border-radius: 100%;
+    border: #7B1E1D solid;
+    color: #FFF;
+    margin: auto;
+}
