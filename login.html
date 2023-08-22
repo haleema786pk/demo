@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link rel="stylesheet" href="login.css">
     <title>Login</title>
 </head>
 <body>
-    <div class="container">
-        <h1>VIRTUAL ESCAPE</h1> 
-        <p>
-            Enter your game code below to get started 
-        </p>
-        <div class="txt">
-            <input type="text" placeholder="Game Code" name="code" required >
-            <button>?</button>
+    <div>
+        <div class="container">
+            <div class="Login_container">
+                <span class="Login_title">VIRTUAL ESCAPE</span> 
+                <span class="Login_instruction">
+                    Enter your game code below to get started 
+                </span>
+                <form class="Login_form-container" action="">
+                    <div class="Login_input-container">
+                        <input type="text" name="code" placeholder="Game Code" style="width: 60%;">
+                        <img src="tooltip.fa2389c4.svg" alt="Help">
+                    </div>
+                    <div class="btn_container">
+                        <button class="btns btn1 mt" style="width: 49%;height: 58px;border-radius: 29px;margin: 0px;font-size: 1em;">
+                            TEST CONNECTION
+                        </button>
+                        <button disabled="disabled" class="btns btn2 mt"style="width: 49%;height: 58px;border-radius: 29px;margin: 0px;font-size: 1em;">
+                            LOG IN <i class="material-icons" style="font-size: 1.2em">fingerprint</i>
+                        </button>
+                    </div>
+                </form>
+                <span></span>
+            </div>
+            <footer style="color: white;text-align: center;">
+                v6.0.0
+            </footer>
         </div>
-        <div class="btnContainer">
-            <button class="btn">TEST CONNECTION</button>
-            <button class="btn" disabled="disabled">LOG IN</button>
-        </div>
+        
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     </div>
-<footer style="color: white;text-align: center;margin-top: 10%;">
-    v6.0.0
-</footer>
+    
 </body>
 </html>

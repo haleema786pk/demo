@@ -3,97 +3,243 @@
     src: url('D:/VE/Montserrat/Montserrat-VariableFont_wght.ttf');
     /* Add other font-weight and style variations if needed */
 }
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
 body{
-    background-image: url(Loginbackground.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size:cover;
-    height: 100vh;
     font-family:'Montserrat', sans-serif;
-    background-attachment: fixed;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+.Login_container{
+    justify-content: flex-start;
+    background-color: rgba(17,52,70,.95);
+    border-radius: 10px;
+    border-color: #35515d;
+    height: 350px;
+    width: 790px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .container{
-    padding: 30px;
-    background-color: #091b25ec;
-    color: aliceblue;
-    text-align: center;
-    width: 55%;
-    margin-top: 10rem;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-
-}
-
-.container *{
-    margin: 5px;
-}
-
-.container h1{
-    font-size: 3rem;
-    font-weight:normal;
-    color: #FFF;
-
-}
-.container p{
-    font-size: x-large;
-}
-
-.btnContainer{
-    display:flex;
-    flex-wrap: wrap;
+    background-image: url(Loginbackground.jpg);
+    height: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #09161e;
+    min-height: 100vh;
     justify-content: center;
+    color: #fff;
+
 }
 
-.btn{
-    background: rgb(59,66,70);
-    background: linear-gradient(0deg, rgba(59,66,70,1) 22%, rgba(75,84,89,1) 60%, rgba(117,131,139,1) 100%);
-    border: none;
-    padding: 20px;
-    color: #FFF;
-    font-size:medium;
-    border-radius: 30px; 
-    flex-basis: 32%;    
-    font-family:'Montserrat', sans-serif;
+.container , .Login_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (max-width: 600px) {
-    .btn {
-        flex-basis: 100%; /* Make buttons take full width on small screens */
+@media screen and (max-width: 800px){
+    .Login_container {
+        height: 320px;
+        width: 98%;
     }
 }
-.btn:disabled
-{
-    background: #2D4955;
-    opacity: 0.5;
+
+@media screen and (max-width: 500px){
+    .Login_container {
+        height: 300px;
+        width: 98%;
+    }
 }
 
-.txt{
-    position: relative;
-    display: block;
+
+
+.Login_title{
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: 30px;
 }
 
-.txt input{
-    padding: 15px;
-    width: 60%;
-    border-radius: 25px;
-    background-color: #2D4955;
-    border: solid white thin;
-    color: #FFF;
+@media screen and (max-width: 800px){
+    .Login_title {
+        font-size: 2.5em;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .Login_title {
+        font-size: 2em;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .Login_title {
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+}
+
+.Login_instruction{
+    font-size: 1.5em;
+    letter-spacing: .041em;
+}
+
+
+@media screen and (max-width: 800px){
+    .Login_instruction {
+        font-size: 1.2em;
+        letter-spacing: .041em;
+    }
     
-    font-family:'Montserrat', sans-serif;
 }
-.txt button{
+
+
+@media screen and (max-width: 500px){
+    .Login_instruction {
+        font-size: .8em;
+        letter-spacing: .041em;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .Login_instruction {
+        font-size: .7em;
+    }
+}
+
+.Login_input-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Login_form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.Login_form-container input {
+    background-color: #3a4e5a;
+    border-radius: 29px;
+    border-color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    width: 70%;
+    min-height: 50px;
+    padding-left: 20px;
+    color: #fff;
+    margin-top: 10px;
+    font-family:'Montserrat', sans-serif;
+    outline: none;
+}
+.Login_form-container input:focus{
+    box-shadow: .5px .5px 3px #ffffffe1;
+}
+
+.Login_form-container input::placeholder{
+    color: #fff;
+}
+
+
+.Login_input-container img
+{
     position: absolute;
-    width: 25px;
-    height: 25px;
-    top: 15px;
-    right: 20%;
-    padding: 5px;
-    background: #7B1E1D;
-    border-radius: 100%;
-    border: #7B1E1D solid;
-    color: #FFF;
-    margin: auto;
+    margin-left: -40px;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 500px)
+{
+    .Login_form-container input {
+        width: 90%!important;
+    }
+}
+@media screen and (max-width: 800px)
+{
+ .Login_form-container input {
+        width: 90%!important;
+    }
+}
+
+.btn_container{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 500px){
+    .btn_container {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    .btn_container {
+        width: 90%;
+    }
+}
+
+.btn_container button:disabled{
+    background-image: linear-gradient(#2c5167,#2c5167);
+    color: #788b96;
+}
+
+.btns{
+    font-family:'Montserrat', sans-serif;
+    margin-top: 10px;
+    border-style: none;
+    font-size: .8em;
+    color: #fff;
+    font-weight: 500!important;
+}
+@media screen and (max-width: 500px){
+    .btns {
+        width: 280px!important;
+        height: 55px!important;
+        font-size: .7em!important;
+    }
+}
+
+.btn1{
+    background-image: linear-gradient(#75838b,#3b4246);
+    background-blend-mode: normal;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn1:active
+{
+    transform: scale(0.99);
+}
+.btn2{
+    background-image: linear-gradient(#f80705,#7b1e1d);
+    background-blend-mode: normal;
+}
+
+.mt{
+    margin-top: 1rem !important;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 30px;
 }
