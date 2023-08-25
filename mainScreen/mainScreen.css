@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css?family=Montserrat');
+}
+
+@font-face {
+    font-family: 'Treasuremap';
+    src: url('Treasuremap-nRxz0.ttf');
+}
+
+* 
+{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family:'Montserrat', sans-serif;
+    line-height: 1.5;
+   
+}
+
+.container{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-image: url('bgImage.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 40px;
+    justify-content: space-between;
+}
+@media (max-width: 500px) {
+    nav{
+        padding: 10px 20px;
+        justify-content:space-around
+    }
+}
+
+
+.navBtn{
+    background-color: rgba(17, 52, 70, 0.53);
+    border: solid #35515D 1px;
+     color: #FFF;
+     padding: 8px 16px;
+     border-radius: 25px;
+     font-size: 14px;
+     margin: 3px;
+     font-family: 'Montserrat';
+}
+
+@media (max-width:500px)
+{
+    .navBtn{
+        font-size: .7em;
+    }
+}
+
+.heading{
+    font-family: 'Treasuremap', sans-serif;
+    font-size: 3.2em;
+    color: #FFF;
+    text-align: center;
+}
+
+.lable{
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    margin-top: 6em;
+}
+
+@media (max-width: 800px) {
+    .lable {
+        font-size: 1em;
+    }
+}
+@media (max-width: 500px) {
+    .lable {
+        font-size: .8em;
+        margin-top: 3em;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .heading {
+        font-size: 2em;
+    }
+}
+@media (max-width: 500px) {
+    .heading {
+        font-size: 1.8em; /* Adjust columns for smaller screens */
+    }
+}
+
+.note{
+    background-color: #FFE67E;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    font-size: .8em;
+    font-weight: 700;
+    margin: 0;
+    padding-right: 40px;
+}
+.note li{
+    list-style-type: none;
+}
+
+
+:root
+{
+    --stop-color-1: #3B5667;
+    --stop-color-2: #2C3D48;
+}
+
+
+.card {
+    position: relative;
+    /* width: 281.444x;
+    height: 350px; */
+    /* width: 141px;
+    height: 175px; */
+    width: 171px;
+    height: 210px;
+    transform: rotate(1deg);
+    border-radius: 20px;
+    background: linear-gradient(135deg, var(--stop-color-1), var(--stop-color-2));
+    overflow: hidden; /*Ensure the gradient border doesn't overflow*/
+}
+
+.cardBackground {
+    position: absolute;
+    left:25px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.cardSolid {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.cardSolid p{
+    color: #fff;
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(175px, 1fr));
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    width: 65%;
+    margin: auto;
+    margin-top: 20px;    
+}
+
+
+@media (max-width: 800px) {
+    .cardContainer {
+        grid-template-columns: repeat(2, minmax(156px, 1fr));
+    }
+}
+
+@media (max-width: 500px) {
+    .cardContainer {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust columns for smaller screens */
+    }
+}
+
+.iconHolder{
+    width: 137px;
+    position: relative;
+    margin: auto;
+    /* margin-left: 23%;*/
+    margin-top: 20%; 
+}
+
+.subIconHolder{
+    position: absolute;
+}
