@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css?family=Montserrat');
+}
+
+@font-face {
+    font-family: 'Treasuremap';
+    src: url('Treasuremap-nRxz0.ttf');
+}
+
+* , :after, :before
+{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+   
+}
+
+.containerM{
+    background-image: url('bgImage.png');
+}
+
+.Main_menu {
+    height: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #09161e;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #fff;
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+
+.heading{
+    font-family: 'Treasuremap', sans-serif;
+    font-weight: 500;
+}
+
+.lable{
+        font-size: larger;
+        font-weight: 400;
+}
+
+
+@media screen and (max-width: 991px)
+{
+    .lable {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 775px)
+{
+    .lable {
+        margin-top: 80px;
+    }
+}
+
+
+.MuiContainer-root {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+@media (min-width: 600px)
+{
+    .MuiContainer-root {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (min-width: 1280px)
+{
+    .MuiContainer-maxWidthLg {
+        max-width: 1280px;
+    }
+}
+
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.Menu_menu-card-container {
+    max-width: 55rem;
+    margin: auto;
+}
+
+@media screen and (max-width: 991px)
+{
+    .Menu_menu-card-container {
+        max-width: 30rem;
+    }
+}
+
+@media screen and (max-width: 580px)
+{
+    .Menu_menu-card-container {
+        margin-bottom: 60px;
+    }
+}
+
+
+.menucard_menu-card {
+    position: relative;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: initial;
+}
+
+.menucard_menu-card .menucard_menu-card-background {
+    width: 200px;
+    height: auto;
+}
+
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-auto, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-auto, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-auto, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+@media (min-width: 576px)
+{
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+
+@media (min-width: 768px)
+{
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .col-xl-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
+
+
+.mt-4, .my-4 {
+    margin-top: 1.5rem!important;
+}
+img, svg {
+    vertical-align: middle;
+}
+img {
+    border-style: none;
+}
+
+.menucard_menu-card .menucard_menu-card-logo {
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    width: 100px;
+    opacity: .5;
+}
+
+.menucard_menu-card .menucard_menu-card-label {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 200px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    opacity: .5;
+}
+
+.text-uppercase {
+    text-transform: uppercase!important;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.Menu_bottom-logo-container {
+    font-size: 12px;
+    text-align: left;
+    position: absolute;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 991px)
+{
+    .Menu_bottom-logo-container {
+        position: relative;
+        margin: 40px 0 0;
+    }
+}
+
+@media screen and (max-width: 580px)
+{
+    .Menu_bottom-logo-container {
+        position: relative;
+        margin: 0 0 10px;
+    }
+}

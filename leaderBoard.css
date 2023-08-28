@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css?family=Montserrat');
+}
+
+@font-face {
+    font-family: 'Treasuremap';
+    src: url('Treasuremap-nRxz0.ttf');
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family:'Montserrat', sans-serif !important;
+    line-height: 1.5;
+    font-weight: 400;   
+}
+
+.navbar.custom {
+    position: absolute;
+    background-color: hsla(0,0%,100%,0)!important;
+    width: 100%;
+}
+
+.navbar.custom button.btn.btn-light.nav-item-custom-btn {
+    background-color: #113446;
+    border: 1px solid #35515d;
+    border-radius: 29px;
+    color: #fff;
+    padding: 5px 20px;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: small;
+    font-weight: 500;
+}
+
+@media (min-width: 768px)
+{
+    .navbar-expand-md {
+        flex-flow: row nowrap; 
+        justify-content: flex-start;
+    }
+}
+
+.navbar, .navbar .container, .navbar .container-fluid, .navbar .container-lg, .navbar .container-md, .navbar .container-sm, .navbar .container-xl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+.navbar.custom .custom-margin {
+    margin-left: 18%;
+}
+
+@media screen and (max-width: 1500px)
+{
+    .navbar.custom .custom-margin {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .navbar.custom .custom-margin {
+        margin-left: 5px;
+    }
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: initial;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.navbar-dark .navbar-toggler {
+    color: hsla(0,0%,100%,.5);
+    border-color: hsla(0,0%,100%,.1);
+}
+
+.navbar.custom #navbarCollapse {
+    margin-right: 18%;
+}
+
+@media screen and (max-width: 1500px)
+{
+    .navbar.custom #navbarCollapse {
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .navbar.custom #navbarCollapse {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .navbar-expand-md .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+
+@media (min-width: 768px)
+{
+    .navbar-expand-md .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("icon_logo.svg");
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: 50%/100% 100% no-repeat;
+}
+
+.container1{
+    background-image: url('Leaderboard.jpg');
+}
+
+.Leaderboard_menu-header {
+    height: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #09161e;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 1.1em;
+    font-weight: 400;
+    background-attachment: fixed;
+}
+
+.container_menu {
+    background-color: rgba(17,52,70,.9);
+    border: 1px solid #35515d;
+    border-radius: 10px;
+    margin-top: 110px;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 25px;
+    width: 1170px;
+    height: auto;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .container_menu {
+        width: 96%;
+    }
+}
+
+
+
+.Leaderboard_slot_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.Leaderboard_game_text{
+    font-size: 1.3em;
+    font-weight: 400;
+    align-self: flex-start;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .Leaderboard_game_text {
+        margin-left: 20px;
+    }
+}
+
+
+@media screen and (max-width: 500px)
+{
+    .Leaderboard_game_text {
+        font-size: 1.1em;
+    }
+}
+
+
+.teamslot_header_slot, .teamslot_item_slot {
+    background-color: #0a1821;
+    border: 1px solid #fff;
+    width: 955px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 590;
+    font-size: 1em;
+}
+
+.teamslot_item_slot {
+    background-color: #2d4955;
+    border-top: none;
+    border-bottom-width: 0;
+    height: 31px;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .teamslot_header_slot, .teamslot_item_slot {
+        width: 100%;
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .teamslot_header_slot, .teamslot_item_slot {
+        font-size: .7em;
+    }
+}
+
+
+@media screen and (max-width: 500px)
+{
+    .teamslot_header_slot, .teamslot_item_slot {
+        font-size: .6em;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .teamslot_header_slot, .teamslot_item_slot {
+        font-size: .55em;
+    }
+}
+
+.teamslot_rank_slot {
+    flex: 2 1;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.teamslot_team_name_slot {
+    flex: 6 1;
+    flex-grow: 6;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+.teamslot_hint_slot {
+    flex: 3 1;
+    flex-grow: 3;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.mt-5, .my-5 {
+    margin-top: 3rem!important;
+}
+
+.button_login-button-red__3Zznx {
+    background-image: linear-gradient(#f80705,#7b1e1d);
+    background-blend-mode: normal;
+}
+
+.button_login-button__3OEb5 {
+    margin-top: 10px;
+    border-style: none;
+    font-size: .8em;
+    color: #fff;
+    font-weight: 500!important;
+}
+
+@media screen and (max-width: 800px)
+{
+    .Leaderboard_slot_container>button {
+        width: 320px!important;
+        font-size: .9em!important;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .Leaderboard_slot_container>button {
+        width: 280px!important;
+        height: 55px!important;
+        font-size: .7em!important;
+    }
+}
+
